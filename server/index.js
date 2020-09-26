@@ -1,6 +1,6 @@
-var express = require('express');
-var expServer = new express();
-
+const express = require('express');
+const expServer = new express();
+const PORT = 1985;
 
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -12,6 +12,6 @@ expServer.get('*', function(req, res) {
     res.send(homePage);
 });
 
-expServer.listen(8000, function(){
+expServer.listen(PORT, function(){
     console.log('server running at 1985');
 })
